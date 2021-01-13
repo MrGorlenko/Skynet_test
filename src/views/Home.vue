@@ -20,10 +20,4 @@ export default Vue.extend({
 .grey_line{
   color: #ddd;
 }
-
-.home{
-  h3{
-    text-align: start;
-  }
-}
 </style>

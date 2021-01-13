@@ -1,14 +1,14 @@
 <template>
   <div>
     <h3>Тип подлключения:</h3>
-    <div class="info info__standart">
+    <div class="info info_standart">
       <p class="info__name">
         {{this.Steps[0].variants[0].title}}
       </p>
       <p class="info__cost">
         {{this.standartConnection.reduce((a, b) => a + b, 0)}} ₽
       </p>
-      <p  class="info__description" pre>
+      <p  class="info__description" pre> 
         {{this.Steps[0].variants[0].description}}
       </p>
       <div class="info__selecting">
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="info info__lux">
+    <div class="info info_lux">
       <p class="info__name">
         {{this.Steps[0].variants[1].title}}
       </p>
@@ -355,11 +355,11 @@ export default Vue.extend({
     background: #f8f8f8;
     border-radius: $borderRadius;
     margin-bottom: 17px;
-    &__standart{
+    &_standart{
       border-left: 6px solid #cccccc;
     }
 
-    &__lux{
+    &_lux{
       border-left: 6px solid $green;
     }
 
